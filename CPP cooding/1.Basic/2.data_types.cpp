@@ -1,11 +1,10 @@
-#include <iostream>
-#include <conio.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    /** datatypes
-        1.char (in c++, 128 characters are exist)
+    /* datatypes
+        1.char (in c++, 128 characters are exist and internally each have ascii value)
         2.int ( -10^9 < int < 10^9 )
         3.long int ( -10^12 < long int < 10^12 )
         4.long long or long long int ( -10^18 < long long int < 10^18 )
@@ -16,18 +15,18 @@ int main()
         they give approximate output for huge data calculation.
     */
 
-    //    Assigning Variable value with three different style
+    //*    Assigning Variable value with three different style
     int variable_1 = 5; // called copy initialization
     // called direct initialization and For more complicated types, direct initialization tends to be more efficient than copy initialization.
     int variable_2(6);
-    // called brace initialization / uniform initialization / list initialization
+    // called brace initialization / uniform initialization
     // Favor initialization using braces whenever possible.
     int variable_3{5};
-    int variable_4 = {11};
+    int variable_4 = {11}; // copy + direct = copy list initialization (personal style)
     // brace initialization এর brace খালি রাখলে এটা data type অনুযায়ী 0 / empty ভ্যালু assgin করে।
     //  এই format এর brace initialization মূলত তখনই ব্যবহার করি
-    //যখন আমরা variable টাই temporary value assign করতে চাই
-    //কেননা পরবর্তীতে অন্য value এটাকে replace করবে
+    // যখন আমরা variable টিতে temporary value assign করতে চাই
+    // কেননা পরবর্তীতে অন্য value এটাকে replace করবে
     int variable_5{}; // caled value initialization
     cout << "Variable 1: " << variable_1 << endl
          << "Variable 2: " << variable_2 << endl
@@ -38,34 +37,34 @@ int main()
     cin >> variable_5;
     cout << "Variable 5 after cin: " << variable_5 << endl;
 
-    // integer value
+    //* integer value
     int a = 10,
         b = 20;
     cout << a << endl;
     cout << "Num 1 is : " << a << endl
          << "Num 2 is : " << b << endl;
 
-    // long int
+    //* long int
 
-    // char value
+    //* char value
     char ch = 'c';
     cout << "character is : " << ch << endl;
 
-    // float
+    //* float
     float f = 10.123456789;
     cout << "float is : " << f << endl;
 
-    // double
+    //* double
     double d = 10.123456789;
     cout << "double is : " << d << endl;
 
-    // boolean
+    //* boolean
     bool bol = true;
     // output will be in numbers
     cout << "The Boolean Value is : " << bol << endl;
 
     // boolean data type uses
-
+    // 0 is false. all other numbers are 1
     bool x = 0;     // false and print 0
     bool y = 100;   // true and print 1
     bool z = 15.75; // true and print 1
@@ -101,14 +100,14 @@ int main()
     int x3 = false + 5 * m - b3; // 0+(5*2)-1
     cout << x3 << endl;
 
-    // overflow concept
+    //* overflow concept
     int num1 = 100000; // 10^5
     int num2 = 100000; // 10^5
     int num3 = num1 * num2;
     cout << "Number 3 is: " << num3 << endl; // it cause 10^5*10^5 = 10^10 which create overflow as int datatype rage is from -10^9 to 10^9
 
-    // int mx = INT_MAX; // ( INT_MIN < int < INT_MAX ) if we add +1 in this range it will back its start value.
-    int mx = INT_MAX + 1;
+    int mx = INT_MAX; // ( INT_MIN < int < INT_MAX ) if we add +1 in this range it will back its start value.
+    // int mx = INT_MAX + 1;
     cout << "Max Int: " << mx << endl;
 
     /**
@@ -123,5 +122,5 @@ int main()
     long long int num6 = num4 * 1LL * num5;
     cout << "Number 6 is: " << num6 << endl;
 
-    getch();
+    return 0;
 }

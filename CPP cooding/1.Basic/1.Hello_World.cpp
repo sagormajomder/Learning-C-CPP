@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#include <iostream>
-#include <conio.h> // without this header file, we can't use getch() function.
 using namespace std;
 
 int main()
@@ -9,7 +7,7 @@ int main()
           << "Majomder"
           << "\n";
      cout << "Mobile Number: "
-          << "01521515266";
+          << "01521515266"
+          << "\n";
      return 0;
-     getch();
 }

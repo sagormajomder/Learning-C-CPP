@@ -1,5 +1,4 @@
-#include <iostream>
-#include <conio.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -9,5 +8,5 @@ int main()
 
     char name[15] = "sagor Majomder";
     cout << "My name is: " << name << endl;
-    getch();
+    return 0;
 }
