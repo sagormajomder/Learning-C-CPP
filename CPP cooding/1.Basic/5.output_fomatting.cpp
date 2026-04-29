@@ -1,6 +1,4 @@
-#include <iostream>
-#include <conio.h>
-#include <iomanip>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -40,14 +38,14 @@ int main()
 
     cout << "The Division is : " << div << endl;
 
-    // float rem=num1%num2; we can't calculate remainder in float or double type Numbers
+    // float rem=num1%num2; we can't calculate remainder for float or double type Numbers
 
     // cout << "The Remainder is : " <<rem<<endl;
 
     cout << "========================SetPrecision=========================" << endl;
 
     // include <iomanip> header file
-    cout << setprecision(5); // if we don't use cout<<fixed, then it count start from beggining position of the number
+    cout << setprecision(5); // if we don't use cout<<fixed, then it count start from beginning position of the number
 
     cout << "The sum is : " << sum << endl;
     cout << "The Subtraction is : " << sub << endl;
@@ -60,7 +58,7 @@ int main()
 
     // include <iomanip> header file
     cout << fixed;           // help to setprecision, count start after point. It also help for not showing output in scientific notation like 1e2 etc
-    cout << setprecision(2); // if we don't use cout<<fixed, then it count start from beggining position of the number
+    cout << setprecision(2); // if we don't use cout<<fixed, then it count start from beginning position of the number
     cout << "The sum is : " << sum << endl;
     cout << "The Subtraction is : " << sub << endl;
 
@@ -76,6 +74,4 @@ int main()
     cout << setw(20) << "The Sub is : " << sub << endl;
     cout << setw(20) << "The Multiple is : " << mul << endl;
     cout << setw(20) << "The Division is : " << div << endl;
-
-    getch();
 }

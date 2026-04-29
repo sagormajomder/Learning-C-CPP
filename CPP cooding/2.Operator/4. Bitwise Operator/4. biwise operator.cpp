@@ -1,5 +1,4 @@
-#include<iostream>
-#include<conio.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -10,40 +9,36 @@ int main()
     Bitwise EXOR = " ^ "
     Bitwise shift right ( divided by 2) = " >> "
     Bitwise shift left (multiple by 2) = " << "
-    Bitwise NOT = " ` " (called Backtik)
+    Bitwise NOT = " ` " (Backtick)
 
     */
 
-    cout<< "Binary AND"<<endl;
+    cout << "Binary AND" << endl;
 
-    int a=32,b=12,c;
+    int a = 32, b = 12, c;
 
     c = a & b;
     cout << c << endl;
 
-    cout<< "Binary OR"<<endl;
+    cout << "Binary OR" << endl;
 
-    c=a | b;
+    c = a | b;
     cout << c << endl;
 
-     cout<< "Binary EXOR"<<endl;
+    cout << "Binary EXOR" << endl;
 
-     c= a ^ b;
+    c = a ^ b;
     cout << c << endl;
 
+    cout << "Binary right shift" << endl;
 
-    cout<< "Binary right shift"<<endl;
+    c = a >> 3;        // a will divided by 2 in three times
+    cout << c << endl; // c = 4
 
-    c = a >> 3; // a will divided by 2 in three times
-    cout << c <<endl; // c = 4
+    cout << "Binary left shift" << endl;
 
-    cout<< "Binary left shift"<<endl;
+    c = c << 3; // c=4 multiple by 2 in three times
+    cout << c << endl;
 
-    c= c << 3; //c=4 multiple by 2 in three times
-    cout << c <<endl;
-
-
-
-    getch();
-
+    return 0;
 }

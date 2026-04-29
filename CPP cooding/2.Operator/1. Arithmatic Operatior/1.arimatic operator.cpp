@@ -1,15 +1,15 @@
-#include <iostream>
-#include <conio.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    // calculation priority
+    /**  Calculation priority (final result always in higher datatype)
+     *  Double > float > long long int >long int > int > char
+     * that means calculation will done by higher data type
+     */
     cout << 7 / 2 << endl;
-    cout << 7 / 2.0 << endl;
-    cout << 'c' + 1 << endl; // char will convert in ASCII value and addition with 1
-    // Double > float > long long int >long int > int > char
-    // that means calculation will done by higher data type
+    cout << 7 / 2.0 << endl; //  float is higher datatype
+    cout << 'c' + 1 << endl; // int is higher datatype. So char will convert in ASCII value and addition with 1
 
     // division and multiplication has same power label. so it works from left to right
     cout << 7 / 2 * 3 << endl; // 9
@@ -41,7 +41,5 @@ int main()
     int rem = num1 % num2;
     cout << "The Remainder is : " << rem << endl;
 
-    // we can't calculate remainder in float or double type Numbers
-
-    getch();
+    //! we can't calculate remainder for float or double type Numbers
 }

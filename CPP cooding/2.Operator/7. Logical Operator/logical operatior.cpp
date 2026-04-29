@@ -1,6 +1,7 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main()
+{
     /**
     1. Logical And --> " && "
     2. Logical Or --> " || "

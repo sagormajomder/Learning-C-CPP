@@ -11,8 +11,7 @@ int main()
         5.float
         6.double
 
-        note: float and double has big range for storing data but they don't give exact output.
-        they give approximate output for huge data calculation.
+        note: float and double has big range for storing data but they don't store exact data. They have precesion error. They just give approximate output for huge data calculation.
     */
 
     //*    Assigning Variable value with three different style
@@ -107,19 +106,24 @@ int main()
     cout << "Number 3 is: " << num3 << endl; // it cause 10^5*10^5 = 10^10 which create overflow as int datatype rage is from -10^9 to 10^9
 
     int mx = INT_MAX; // ( INT_MIN < int < INT_MAX ) if we add +1 in this range it will back its start value.
-    // int mx = INT_MAX + 1;
     cout << "Max Int: " << mx << endl;
+    cout << "Max Int Overflow: " << mx + 1 << endl;
+
+    long long int num4 = 100000; // 10^5
+    long long int num5 = 100000; // 10^5
+    long long int num6 = num4 * num5;
+    cout << "Number 6 is: " << num6 << endl; // 10^10
 
     /**
-    long long int num4=100000; //10^5
-    long long int num5=100000; //10^5
-    long long int num6=num4*num5;
+    int num4=100000; //10^5
+    int num5=100000; //10^5
+    long long int num6=num4*num5; // store wrong value
     cout<<"Number 6 is: " <<num6 <<endl;
     */
 
-    int num4 = 100000; // 10^5
-    int num5 = 100000; // 10^5
-    long long int num6 = num4 * 1LL * num5;
+    int num4 = 100000;                      // 10^5
+    int num5 = 100000;                      // 10^5
+    long long int num6 = num4 * 1LL * num5; // calculation has higher datatype -> long long int
     cout << "Number 6 is: " << num6 << endl;
 
     return 0;

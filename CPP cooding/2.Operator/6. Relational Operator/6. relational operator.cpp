@@ -1,8 +1,8 @@
-#include<iostream>
-#include<bits/stdc++.h>
-#include<conio.h>
+
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main()
+{
     /**
     Relational Operator Always return boolean value: true / false
     1. " < " --> greater than
@@ -18,6 +18,4 @@ int main(){
     6. " != " --> not equal
 
     */
-
-
 }

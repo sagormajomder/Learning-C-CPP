@@ -1,13 +1,11 @@
-#include<iostream>
-#include<bits/stdc++.h>
-#include<conio.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main()
+{
     int num;
     double result;
-    cout<< "Enter Farenheit Temperature: ";
-    cin>>num;
-    result= ((double)5/9)*(num-32);
-    cout<<"Celcious Temperature: "<< result<<endl;
-    getch();
+    cout << "Enter Fahrenheit Temperature: ";
+    cin >> num;
+    result = ((double)5 / 9) * (num - 32);
+    cout << "Celsius Temperature: " << result << endl;
 }

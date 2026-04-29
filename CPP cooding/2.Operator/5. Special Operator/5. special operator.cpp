@@ -1,5 +1,4 @@
-#include<iostream>
-#include<conio.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -16,22 +15,21 @@ int main()
     char c;
     char ch[20];
 
-    cout<< "Size of Operator" << endl;
+    cout << "Size of Operator" << endl;
     /**
     size will show in bytes
     */
-    cout<< sizeof(i) <<endl;
-    cout<< sizeof(f) <<endl;
-    cout<< sizeof(d) <<endl;
-    cout<< sizeof(c) <<endl;
-    cout<< sizeof(ch) <<endl;
+    cout << sizeof(i) << endl;
+    cout << sizeof(f) << endl;
+    cout << sizeof(d) << endl;
+    cout << sizeof(c) << endl;
+    cout << sizeof(ch) << endl;
 
-    cout<< "Comma Operator" << endl;
+    cout << "Comma Operator" << endl;
 
-    int a,b,sum;
-    sum=(a=10, b=10,sum=a+b);
-    cout<< sum << endl;
+    int a, b, sum;
+    sum = (a = 10, b = 10, sum = a + b);
+    cout << sum << endl;
 
-
-   getch();
+    return 0;
 }
